@@ -9,4 +9,4 @@
 | avg_profit        | 6.7630    |
 | max_drawdown      | -28.7804  |
 
-[![Watch the video](https://raw.githubusercontent.com/FatherMonkey916/AI-Trading-Bot-From-Data-to-Money/main/ai_trading_bot_pnl_0.01_daily_winrate_0.68.mp4)](https://raw.githubusercontent.com/FatherMonkey916/AI-Trading-Bot-From-Data-to-Money/main/ai_trading_bot_pnl_0.01_daily_winrate_0.68.mp4)
+[![Watch the video](https://raw.githubusercontent.com/FatherMonkey916/AI-Trading-Bot-From-Data-to-Money/main/video_file.png)](https://raw.githubusercontent.com/FatherMonkey916/AI-Trading-Bot-From-Data-to-Money/main/ai_trading_bot_pnl_0.01_daily_winrate_0.68.mp4)
