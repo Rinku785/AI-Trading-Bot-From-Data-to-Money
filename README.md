@@ -12,7 +12,7 @@
 
 [![Watch the video](https://raw.githubusercontent.com/FatherMonkey916/AI-Trading-Bot-From-Data-to-Money/main/video_file.png)](https://raw.githubusercontent.com/FatherMonkey916/AI-Trading-Bot-From-Data-to-Money/main/ai_trading_bot_pnl_0.01_daily_winrate_0.68.mp4)
 
-# **Data To Money Documentation**
+# **Data To Money** ***Documentation***
 
 ## **Overview**
 This bot is an automated cryptocurrency trading system designed to operate on the **Bitget exchange**. It fetches real-time market data, applies predictive analytics using a pretrained **neural forecast model**, and executes buy/sell or exit strategies based on intelligent signal generation.
